@@ -7,8 +7,5 @@ build:
   jobs:
     build:
       html:
+        - pip install -r requirements.txt
         - sphinx-build -W . $READTHEDOCS_OUTPUT/html
-
-python:
-  install:
-    - requirements: requirements.txt
