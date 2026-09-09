@@ -7,8 +7,8 @@ build:
   jobs:
     build:
       html:
-        - sphinx-build -W docs $READTHEDOCS_OUTPUT/html
+        - sphinx-build -W . $READTHEDOCS_OUTPUT/html
 
 python:
   install:
-    - requirements: docs/requirements.txt
+    - requirements: requirements.txt
